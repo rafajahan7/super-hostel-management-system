@@ -369,3 +369,149 @@ footer {
         gap: 0;
     }
 }
+
+
+
+/* Login and Registration Pages */
+
+.auth-body {
+    font-family: Arial, sans-serif;
+    background-color: #edf2f7;
+    margin: 0;
+    padding: 30px;
+}
+
+
+.auth-container {
+    background-color: white;
+    width: 80%;
+    margin: 30px auto;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+.auth-image {
+    background-image: url("images/hostel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #173653;
+    height: 180px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.image-overlay {
+    background-color: #245778;
+    padding: 10px;
+}
+
+
+.auth-form {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.auth-form h2 {
+    color: #173653;
+    text-align: center;
+}
+
+.form-description {
+    color: #666666;
+    text-align: center;
+}
+
+
+.auth-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+.auth-form input,
+.auth-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+
+
+.remember-row {
+    margin: 15px 0;
+}
+
+.remember-label {
+    display: inline;
+}
+
+.remember-row input {
+    width: auto;
+}
+
+.remember-row a {
+    color: #245778;
+}
+
+
+.auth-button {
+    display: block;
+    width: 100%;
+    background-color: #245778;
+    color: white;
+    padding: 12px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.auth-button:hover {
+    background-color: #173653;
+}
+
+
+.back-link,
+.switch-form a,
+.home-link {
+    color: #245778;
+    text-decoration: none;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.logout-card {
+    background-color: white;
+    width: 70%;
+    margin: 80px auto;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.logout-icon {
+    background-color: #d9f5e6;
+    color: green;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.logout-card h1 {
+    color: #173653;
+}
+
+.logout-card p {
+    color: #666666;
+    line-height: 1.6;
+}
+
