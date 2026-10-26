@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Administrator Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <h2 class="logo">Super Hostel</h2>
+        <p class="side-title">ADMIN PANEL</p>
+
+        <a class="active" href="#dashboard"> Dashboard</a>
+        <a href="#students"> Students</a>
+        <a href="#staff"> Staff Members</a>
+        <a href="#about"> About Hostel</a>
+
+        <div class="sidebar-bottom">
+            <p>Super Hostel Management System</p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="topbar">
+            <div>
+                <h2>Administrator Dashboard</h2>
+                <p>Manage all your hostel accounts in one place.</p>
+            </div>
+            <div class="admin-profile">
+                <span class="admin-icon">👤</span>
+                <span>Administrator</span>
+            </div>
+        </div>
+
+        <section class="welcome" id="dashboard">
+            <div class="welcome-text">
+                <p class="small-heading">WELCOME BACK!</p>
+                <h1>Super Hostel Management</h1>
+                <p>Manage student and staff information easily
+                    from your administrator dashboard.</p>
+                <a href="#students" class="welcome-button">
+                    View Student Accounts
+                </a>
+            </div>
+
+            <img
+    src="images/hostel.jpg"
+    alt="Student hostel"
+    class="image">
+        </section>
+
+        <section class="statistics">
+            <div class="stat-card blue">
+                <div class="stat-icon">🎓</div>
+                <p>Total Students</p>
+                <h2>120</h2>
+                <small>Registered students</small>
+            </div>
+
+            <div class="stat-card green">
+                <div class="stat-icon">👥</div>
+                <p>Total Staff</p>
+                <h2>10</h2>
+                <small>Registered staff members</small>
+            </div>
+
+            <div class="stat-card orange">
+                <div class="stat-icon">✅</div>
+                <p>Active Accounts</p>
+                <h2>345</h2>
+                <small>Currently active</small>
+            </div>
+        </section>
+
+        <section class="content-section" id="students">
+            <div class="section-heading">
+                <div>
+                    <h2>Student Account Management</h2>
+                    <p>View registered student information.</p>
+                </div>
+                <a href="#students" class="add-button">+ Add Student</a>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Room</th>
+                        <th>Account Status</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rafa Jahan</td>
+                        <td>201</td>
+                        <td><span class="status active-status">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Oindrila Chakrabarty</td>
+                        <td>202</td>
+                        <td><span class="status active-status">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nusrat Jahan</td>
+                        <td>205</td>
+                        <td><span class="status inactive-status">Inactive</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Sanjida Akter</td>
+                        <td>209</td>
+                        <td><span class="status inactive-status">Inactive</span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-section" id="staff">
+            <div class="section-heading">
+                <div>
+                    <h2>Staff Account Management</h2>
+                    <p>View staff members and their assigned roles.</p>
+                </div>
+                <a href="#staff" class="add-button">+ Add Staff</a>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Staff ID</th>
+                        <th>Staff Name</th>
+                        <th>Assigned Role</th>
+                        <th>Account Status</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Abdul Karim</td>
+                        <td>Cleaner</td>
+                        <td><span class="status active-status">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Hasina Begum</td>
+                        <td>Laundry Worker</td>
+                        <td><span class="status active-status">Active</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Faysal Ahmed</td>
+                        <td>Kitchen Staff</td>
+                        <td><span class="status active-status">Active</span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <h2>About Super Hostel</h2>
+            <p>A simple management system designed to organize
+                student accounts, staff information, and hostel services.</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Super Hostel Management System</p>
+            <p>Hostel Administrator Panel</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
