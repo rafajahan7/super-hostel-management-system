@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Monitoring and Reports</title>
+    <link rel="stylesheet" href="../css/complaints.css">
+</head>
+<body>
+
+   
+<nav class="sidebar">
+    <h2>Super Hostel</h2>
+    <p>ADMIN PANEL</p>
+
+    <a href="admin.html">Dashboard</a>
+    <a href="admin.html#students">Students</a>
+    <a href="admin.html#staff">Staff Members</a>
+    <a href="service.html">Service Management</a>
+    <a href="complaints.html">Complaints and Reports</a>
+    <a href="admin.html#about">About Hostel</a>
+</nav>
+
+
+    <div class="main">
+
+        <div class="topbar">
+            <div>
+                <h2>Complaint Monitoring and Reports</h2>
+                <p>Monitor complaints and review hostel service reports.</p>
+            </div>
+
+            <div class="admin">
+                <h4>Administrator</h4>
+            </div>
+        </div>
+
+        <section class="welcome" id="dashboard">
+            <div>
+                <h1>Complaint and Report Management</h1>
+                <p>Review student complaints, assign unresolved issues
+                    and monitor hostel service performance.</p>
+
+                <a href="#complaints" class="viewButton">
+                    View Complaints
+                </a>
+
+                <a href="#reports" class="viewButton">
+                    View Reports
+                </a>
+            </div>
+
+           <img src="../images/hostel.jpg" alt="Hostel" class="image">
+        </section>
+
+        <section class="cards">
+            <div class="card1">
+                <p>Total Complaints</p>
+                <h2>25</h2>
+                <small>Registered complaints</small>
+            </div>
+
+            <div class="card1">
+                <p>Unresolved Issues</p>
+                <h2>8</h2>
+                <small>Issues waiting for action</small>
+            </div>
+
+            <div class="card1">
+                <p>Resolved Complaints</p>
+                <h2>17</h2>
+                <small>Completed complaints</small>
+            </div>
+        </section>
+
+        <section class="management" id="complaints">
+            <div class="heading">
+                <div>
+                    <h2>Student Complaint Management</h2>
+                    <p>Review complaints submitted by hostel students.</p>
+                </div>
+
+                <a href="#complaints" class="add">Add Complaint</a>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Complaint ID</th>
+                        <th>Student Name</th>
+                        <th>Complaint</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Rafa Jahan</td>
+                        <td>Water Supply Problem</td>
+                        <td>High</td>
+                        <td><span class="status inactive">Pending</span></td>
+                        <td>
+                            <button>Review</button>
+                            <button>Assign</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Oindrila Chakrabarty</td>
+                        <td>Room Cleaning Problem</td>
+                        <td>Medium</td>
+                        <td><span class="status inactive">In Progress</span></td>
+                        <td>
+                            <button>Review</button>
+                            <button>Assign</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Nusrat Jahan</td>
+                        <td>Laundry Service Delay</td>
+                        <td>Low</td>
+                        <td><span class="status active">Resolved</span></td>
+                        <td>
+                            <button>Review</button>
+                            <button>Close</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Sanjida Akter</td>
+                        <td>Dining Area Problem</td>
+                        <td>High</td>
+                        <td><span class="status inactive">Pending</span></td>
+                        <td>
+                            <button>Review</button>
+                            <button>Assign</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="management" id="assignment">
+            <div class="heading">
+                <div>
+                    <h2>Unresolved Issue Assignment</h2>
+                    <p>View unresolved issues and their assigned staff members.</p>
+                </div>
+
+                <a href="#assignment" class="add">Assign Issue</a>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Issue ID</th>
+                        <th>Issue Description</th>
+                        <th>Priority</th>
+                        <th>Assigned Staff</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Water Supply Problem</td>
+                        <td>High</td>
+                        <td>Abdul Karim</td>
+                        <td><span class="status inactive">Pending</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Update</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Room Cleaning Problem</td>
+                        <td>Medium</td>
+                        <td>Not Assigned</td>
+                        <td><span class="status inactive">Pending</span></td>
+                        <td>
+                            <button>Assign</button>
+                            <button>Update</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Dining Area Problem</td>
+                        <td>High</td>
+                        <td>Faysal Ahmed</td>
+                        <td><span class="status inactive">In Progress</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Update</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="management" id="reports">
+            <div class="heading">
+                <div>
+                    <h2>Service Request Summary</h2>
+                    <p>View a summary of hostel service requests.</p>
+                </div>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Service Type</th>
+                        <th>Total Requests</th>
+                        <th>Completed Requests</th>
+                        <th>Pending Requests</th>
+                    </tr>
+
+                    <tr>
+                        <td>Cleaning Service</td>
+                        <td>20</td>
+                        <td>15</td>
+                        <td>5</td>
+                    </tr>
+
+                    <tr>
+                        <td>Laundry Service</td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>6</td>
+                    </tr>
+
+                    <tr>
+                        <td>Meal Service</td>
+                        <td>25</td>
+                        <td>22</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+
+
+        <section class="about" id="about">
+            <h2>About Complaint Monitoring</h2>
+            <p>This section helps the administrator monitor student
+                complaints, assign unresolved issues and review hostel
+                service requests and task completion reports.</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Super Hostel Management System</p>
+            <p>Hostel Administrator Panel</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hostel Administrator Dashboard</title>
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
 
-    <nav class="sidebar">
-        <h2 class="logo">Super Hostel</h2>
-        <p class="navTitle">ADMIN PANEL</p>
+    
+<nav class="sidebar">
+    <h2>Super Hostel</h2>
+    <p>ADMIN PANEL</p>
 
-        <a>Dashboard</a>
-        <a>Students</a>
-        <a>Staff Members</a>
-        <a>About Hostel</a>
-    </nav>
+    <a href="admin.html">Dashboard</a>
+    <a href="#Users">Users</a>
+    <a href="#staff">Staff Members</a>
+    <a href="service.html">Service Management</a>
+    <a href="complaints.html">Complaints and Reports</a>
+    <a href="#about">About Hostel</a>
+</nav>
+
 
     <div class="main">
 
@@ -27,8 +31,8 @@
                 <p>Manage all your hostel accounts in one place.</p>
             </div>
 
-            <div class="admin">
-                <span>Administrator</span>
+            <div>
+                <h4>Administrator</h4>
             </div>
 
         </div>
@@ -36,27 +40,24 @@
         <section class="welcome" id="dashboard">
             <div>
                 <h1>Super Hostel Management</h1>
-                <p>Manage student and staff information easily
+                <p>Manage users and staff information easily
                     from your administrator dashboard.</p>
-                <a href="#students" class="viewButton">
-                    View Student Accounts
+                <a href="#users" class="viewButton">
+                    View Users Accounts
                 </a>
                 <a href="#staff" class="viewButton">
                     View Staff Accounts
                 </a>
             </div>
 
-            <img
-                src="images/hostel.jpg"
-                alt="Student hostel"
-                class="image">
+            <img src="../images/hostel.jpg" alt="Hostel" class="image">
         </section>
 
         <section class="cards">
             <div class="card1">
-                <p>Total Students</p>
+                <p>Total Users</p>
                 <h2>120</h2>
-                <small>Registered students</small>
+                <small>Registered users</small>
             </div>
 
             <div class="card1">
@@ -72,69 +73,76 @@
             </div>
         </section>
 
-        <section class="management" id="students">
+        <section class="management" id="users">
             <div class="heading">
                 <div>
-                    <h2>Student Account Management</h2>
-                    <p>View registered student information.</p>
+                    <h2>User Account Management</h2>
+                    <p>View registered users information.</p>
                 </div>
-                <a href="#students" class="add">Add Student</a>
+                <a href="#users" class="add">Add Student</a>
             </div>
 
             <div>
-                <table>
-                    <tr>
-                        <th>Student ID</th>
-                        <th>Student Name</th>
-                        <th>Room</th>
-                        <th>Account Status</th>
-                        <th>Actions</th>
-                    </tr>
 
-                    <tr>
-                        <td>1</td>
-                        <td>Rafa Jahan</td>
-                        <td>201</td>
-                        <td><span class="status active">Active</span></td>
-                        <td>
-                            <button class="edit-button">Edit</button>
-                            <button class="deactivate-button">Deactivate</button>
-                        </td>
-                    </tr>
+<table>
+    <tr>
+        <th>User ID</th>
+        <th>User Name</th>
+        <th>Room</th>
+        <th>User Type</th>
+        <th>Account Status</th>
+        <th>Actions</th>
+    </tr>
 
-                    <tr>
-                        <td>2</td>
-                        <td>Oindrila Chakrabarty</td>
-                        <td>202</td>
-                        <td><span class="status active">Active</span></td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Deactivate</button>
-                        </td>
-                    </tr>
+    <tr>
+        <td>1</td>
+        <td>Rafa Jahan</td>
+        <td>201</td>
+        <td>Student</td>
+        <td><span class="status active">Active</span></td>
+        <td>
+            <button>Edit</button>
+            <button>Deactivate</button>
+        </td>
+    </tr>
 
-                    <tr>
-                        <td>3</td>
-                        <td>Nusrat Jahan</td>
-                        <td>205</td>
-                        <td><span class="status inactive">Inactive</span></td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Deactivate</button>
-                        </td>
-                    </tr>
+    <tr>
+        <td>2</td>
+        <td>Oindrila Chakrabarty</td>
+        <td>202</td>
+        <td>Job Holder</td>
+        <td><span class="status active">Active</span></td>
+        <td>
+            <button>Edit</button>
+            <button>Deactivate</button>
+        </td>
+    </tr>
 
-                    <tr>
-                        <td>4</td>
-                        <td>Sanjida Akter</td>
-                        <td>209</td>
-                        <td><span class="status inactive">Inactive</span></td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Deactivate</button>
-                        </td>
-                    </tr>
-                </table>
+    <tr>
+        <td>3</td>
+        <td>Nusrat Jahan</td>
+        <td>205</td>
+        <td>Student</td>
+        <td><span class="status inactive">Inactive</span></td>
+        <td>
+            <button>Edit</button>
+            <button>Deactivate</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Sanjida Akter</td>
+        <td>209</td>
+        <td>Other</td>
+        <td><span class="status inactive">Inactive</span></td>
+        <td>
+            <button>Edit</button>
+            <button>Deactivate</button>
+        </td>
+    </tr>
+</table>
+
             </div>
         </section>
 

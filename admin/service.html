@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Schedule and Assignment Management</title>
+    <link rel="stylesheet" href="../css/service.css">
+</head>
+<body>
+
+   
+<nav class="sidebar">
+    <h2>Super Hostel</h2>
+    <p>ADMIN PANEL</p>
+
+    <a href="admin.html">Dashboard</a>
+    <a href="admin.html#students">Students</a>
+    <a href="admin.html#staff">Staff Members</a>
+    <a href="service.html">Service Management</a>
+    <a href="complaints.html">Complaints and Reports</a>
+    <a href="admin.html#about">About Hostel</a>
+</nav>
+
+
+    <div class="main">
+
+        <div class="topbar">
+            <div>
+                <h2>Service Schedule and Assignment Management</h2>
+                <p>Manage hostel services and assign tasks to staff members.</p>
+            </div>
+
+            <div class="admin">
+                <h4>Administrator</h4>
+            </div>
+        </div>
+
+        <section class="welcome" id="dashboard">
+            <div>
+                <h1>Hostel Service Management</h1>
+                <p>Organize cleaning schedules, laundry services, meal menus
+                    and staff assignments from one place easily.</p>
+
+                <a href="#cleaning" class="viewButton">
+                    View Cleaning Schedule
+                </a>
+
+                <a href="#tasks" class="viewButton">
+                    View Staff Assignments
+                </a>
+            </div>
+
+            <img src="../images/hostel.jpg" alt="Hostel" class="image">
+        </section>
+
+        <section class="cards">
+            <div class="card1">
+                <p>Cleaning Tasks</p>
+                <h2>12</h2>
+                <small>Scheduled cleaning tasks</small>
+            </div>
+
+            <div class="card1">
+                <p>Laundry Service</p>
+                <h2>Available</h2>
+                <small>Current service status</small>
+            </div>
+
+            <div class="card1">
+                <p>Staff Tasks</p>
+                <h2>8</h2>
+                <small>Assigned tasks</small>
+            </div>
+        </section>
+
+        <section class="management" id="cleaning">
+            <div class="heading">
+                <div>
+                    <h2>Cleaning Schedule Management</h2>
+                    <p>View and organize hostel cleaning schedules.</p>
+                </div>
+
+                <a href="#cleaning" class="add">Add Schedule</a>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Schedule ID</th>
+                        <th>Area</th>
+                        <th>Cleaning Day</th>
+                        <th>Assigned Staff</th>
+                        <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Room Floors</td>
+                        <td>Sunday</td>
+                        <td>Abdul Karim</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Common Room</td>
+                        <td>Monday</td>
+                        <td>Abdul Karim</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Washrooms</td>
+                        <td>Tuesday</td>
+                        <td>Hasina Begum</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="management" id="laundry">
+            <div class="heading">
+                <div>
+                    <h2>Laundry Service Management</h2>
+                    <p>Manage laundry-service availability.</p>
+                </div>
+
+                <a href="#laundry" class="add">Update Availability</a>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Service ID</th>
+                        <th>Service Name</th>
+                        <th>Available Day</th>
+                        <th>Service Status</th>
+                        <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Regular Laundry</td>
+                        <td>Sunday - Thursday</td>
+                        <td><span class="status active">Available</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Update Status</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Bed Sheet Washing</td>
+                        <td>Friday</td>
+                        <td><span class="status inactive">Unavailable</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Update Status</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="management" id="meals">
+            <div class="heading">
+                <div>
+                    <h2>Meal Menu Management</h2>
+                    <p>View and organize daily hostel meal menus.</p>
+                </div>
+
+                <a href="#meals" class="add">Add Meal Menu</a>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Menu ID</th>
+                        <th>Day</th>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                        <th>Dinner</th>
+                        <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Sunday</td>
+                        <td>Bread and Egg</td>
+                        <td>Rice and Chicken</td>
+                        <td>Rice and Vegetables</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Monday</td>
+                        <td>Paratha and Egg</td>
+                        <td>Rice and Fish</td>
+                        <td>Rice and Dal</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Tuesday</td>
+                        <td>Bread and Banana</td>
+                        <td>Rice and Beef</td>
+                        <td>Rice and Chicken</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="management" id="tasks">
+            <div class="heading">
+                <div>
+                    <h2>Staff Assignment Management</h2>
+                    <p>Assign hostel service tasks to staff members.</p>
+                </div>
+
+                <a href="#tasks" class="add">Assign Task</a>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Task ID</th>
+                        <th>Task Name</th>
+                        <th>Assigned Staff</th>
+                        <th>Due Day</th>
+                        <th>Task Status</th>
+                        <th>Actions</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Clean Common Room</td>
+                        <td>Abdul Karim</td>
+                        <td>Sunday</td>
+                        <td><span class="status active">Completed</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Collect Laundry</td>
+                        <td>Hasina Begum</td>
+                        <td>Monday</td>
+                        <td><span class="status inactive">Pending</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Check Dining Area</td>
+                        <td>Faysal Ahmed</td>
+                        <td>Tuesday</td>
+                        <td><span class="status inactive">Pending</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Service Management</h2>
+            <p>This section helps the administrator organize hostel
+                services, prepare meal menus and assign duties to staff.</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Super Hostel Management System</p>
+            <p>Hostel Administrator Panel</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

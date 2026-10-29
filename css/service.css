@@ -1,5 +1,7 @@
 
-/* General Styles */
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -7,9 +9,6 @@ body {
     background-color: #f4f7fb;
     color: #26364a;
 }
-
-
-/* Sidebar */
 
 .sidebar {
     width: 204px;
@@ -20,18 +19,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-}
-
-.logo {
-    font-size: 23px;
-    margin-bottom: 35px;
-}
-
-.side-title {
-    color: #a9c2d9;
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+    overflow-y: auto;
 }
 
 .sidebar a {
@@ -48,16 +36,6 @@ body {
     background-color: #2d5b80;
 }
 
-.sidebar-bottom {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    color: #b7cada;
-    font-size: 12px;
-}
-
-
 /* Main Content */
 
 .main {
@@ -65,8 +43,6 @@ body {
     padding: 25px 35px;
 }
 
-
-/* Top Bar */
 
 .topbar {
     display: flex;
@@ -92,15 +68,6 @@ body {
     font-weight: bold;
 }
 
-.admin-icon {
-    background-color: #dceaf6;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-
-/* Welcome Section */
-
 .welcome {
     background-color: #e0edf8;
     padding: 25px;
@@ -109,15 +76,6 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 25px;
-}
-
-
-
-.small-heading {
-    color: #3978a8;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 12px;
 }
 
 .welcome h1 {
@@ -148,8 +106,6 @@ body {
 }
 
 
-/* Statistics Cards */
-
 .cards {
     display: flex;
     margin-bottom: 25px;
@@ -165,12 +121,7 @@ body {
     box-shadow: 0 3px 12px #e2e8f0;
 }
 
-
-
-
-/* Student and Staff Sections */
-
-.management{
+.management {
     background-color: white;
     padding: 25px;
     margin-bottom: 25px;
@@ -185,8 +136,6 @@ body {
     margin-bottom: 20px;
 }
 
-
-
 .add {
     background-color: #245b83;
     color: white;
@@ -196,7 +145,10 @@ body {
 }
 
 
-
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
 th {
     background-color: #edf3f8;
@@ -210,8 +162,6 @@ td {
     border-bottom: 1px solid #e7edf3;
 }
 
-
-/* Account Status */
 
 .status {
     display: inline-block;
@@ -231,8 +181,16 @@ td {
     background-color: #fff0d6;
 }
 
+button {
+    background-color: #245b83;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2px;
+}
 
-/* About Section */
 
 .about {
     background-color: white;
@@ -249,7 +207,3 @@ footer {
     font-size: 13px;
     padding: 10px 0;
 }
-
-
-
-
