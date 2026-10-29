@@ -1,169 +1,202 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hostel Administrator Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
 
-    <aside class="sidebar">
+    <nav class="sidebar">
         <h2 class="logo">Super Hostel</h2>
-        <p class="side-title">ADMIN PANEL</p>
+        <p class="navTitle">ADMIN PANEL</p>
 
-        <a class="active" href="#dashboard"> Dashboard</a>
-        <a href="#students"> Students</a>
-        <a href="#staff"> Staff Members</a>
-        <a href="#about"> About Hostel</a>
+        <a>Dashboard</a>
+        <a>Students</a>
+        <a>Staff Members</a>
+        <a>About Hostel</a>
+    </nav>
 
-        <div class="sidebar-bottom">
-            <p>Super Hostel Management System</p>
-        </div>
-    </aside>
-
-    <main class="main-content">
+    <div class="main">
 
         <div class="topbar">
             <div>
                 <h2>Administrator Dashboard</h2>
                 <p>Manage all your hostel accounts in one place.</p>
             </div>
-            <div class="admin-profile">
-                <span class="admin-icon">👤</span>
+
+            <div class="admin">
                 <span>Administrator</span>
             </div>
+
         </div>
 
         <section class="welcome" id="dashboard">
-            <div class="welcome-text">
-                <p class="small-heading">WELCOME BACK!</p>
+            <div>
                 <h1>Super Hostel Management</h1>
                 <p>Manage student and staff information easily
                     from your administrator dashboard.</p>
-                <a href="#students" class="welcome-button">
+                <a href="#students" class="viewButton">
                     View Student Accounts
+                </a>
+                <a href="#staff" class="viewButton">
+                    View Staff Accounts
                 </a>
             </div>
 
             <img
-    src="images/hostel.jpg"
-    alt="Student hostel"
-    class="image">
+                src="images/hostel.jpg"
+                alt="Student hostel"
+                class="image">
         </section>
 
-        <section class="statistics">
-            <div class="stat-card blue">
-                <div class="stat-icon">🎓</div>
+        <section class="cards">
+            <div class="card1">
                 <p>Total Students</p>
                 <h2>120</h2>
                 <small>Registered students</small>
             </div>
 
-            <div class="stat-card green">
-                <div class="stat-icon">👥</div>
+            <div class="card1">
                 <p>Total Staff</p>
                 <h2>10</h2>
                 <small>Registered staff members</small>
             </div>
 
-            <div class="stat-card orange">
-                <div class="stat-icon">✅</div>
+            <div class="card1">
                 <p>Active Accounts</p>
                 <h2>345</h2>
                 <small>Currently active</small>
             </div>
         </section>
 
-        <section class="content-section" id="students">
-            <div class="section-heading">
+        <section class="management" id="students">
+            <div class="heading">
                 <div>
                     <h2>Student Account Management</h2>
                     <p>View registered student information.</p>
                 </div>
-                <a href="#students" class="add-button">+ Add Student</a>
+                <a href="#students" class="add">Add Student</a>
             </div>
 
-            <div class="table-container">
+            <div>
                 <table>
                     <tr>
                         <th>Student ID</th>
                         <th>Student Name</th>
                         <th>Room</th>
                         <th>Account Status</th>
+                        <th>Actions</th>
                     </tr>
+
                     <tr>
                         <td>1</td>
                         <td>Rafa Jahan</td>
                         <td>201</td>
-                        <td><span class="status active-status">Active</span></td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <button class="edit-button">Edit</button>
+                            <button class="deactivate-button">Deactivate</button>
+                        </td>
                     </tr>
+
                     <tr>
                         <td>2</td>
                         <td>Oindrila Chakrabarty</td>
                         <td>202</td>
-                        <td><span class="status active-status">Active</span></td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Deactivate</button>
+                        </td>
                     </tr>
+
                     <tr>
                         <td>3</td>
                         <td>Nusrat Jahan</td>
                         <td>205</td>
-                        <td><span class="status inactive-status">Inactive</span></td>
+                        <td><span class="status inactive">Inactive</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Deactivate</button>
+                        </td>
                     </tr>
+
                     <tr>
                         <td>4</td>
                         <td>Sanjida Akter</td>
                         <td>209</td>
-                        <td><span class="status inactive-status">Inactive</span></td>
+                        <td><span class="status inactive">Inactive</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Deactivate</button>
+                        </td>
                     </tr>
                 </table>
             </div>
         </section>
 
-        <section class="content-section" id="staff">
-            <div class="section-heading">
+        <section class="management" id="staff">
+            <div class="heading">
                 <div>
                     <h2>Staff Account Management</h2>
                     <p>View staff members and their assigned roles.</p>
                 </div>
-                <a href="#staff" class="add-button">+ Add Staff</a>
+                <a href="#staff" class="add">Add Staff</a>
             </div>
 
-            <div class="table-container">
+            <div>
                 <table>
                     <tr>
                         <th>Staff ID</th>
                         <th>Staff Name</th>
                         <th>Assigned Role</th>
                         <th>Account Status</th>
+                        <th>Actions</th>
                     </tr>
+
                     <tr>
                         <td>1</td>
                         <td>Abdul Karim</td>
                         <td>Cleaner</td>
-                        <td><span class="status active-status">Active</span></td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Deactivate</button>
+                        </td>
                     </tr>
+
                     <tr>
                         <td>2</td>
                         <td>Hasina Begum</td>
                         <td>Laundry Worker</td>
-                        <td><span class="status active-status">Active</span></td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Deactivate</button>
+                        </td>
                     </tr>
+
                     <tr>
                         <td>3</td>
                         <td>Faysal Ahmed</td>
                         <td>Kitchen Staff</td>
-                        <td><span class="status active-status">Active</span></td>
+                        <td><span class="status active">Active</span></td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Deactivate</button>
+                        </td>
                     </tr>
                 </table>
             </div>
         </section>
 
-        <section class="about-section" id="about">
+        <section class="about" id="about">
             <h2>About Super Hostel</h2>
             <p>A simple management system designed to organize
-                student accounts,staff information and hostel services.</p>
+                student accounts, staff information and hostel services.</p>
         </section>
 
         <footer>
@@ -171,7 +204,7 @@
             <p>Hostel Administrator Panel</p>
         </footer>
 
-    </main>
+    </div>
 
 </body>
 </html>
