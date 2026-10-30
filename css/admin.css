@@ -7,48 +7,51 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f7fb;
-    color: #26364a;
+    color: #333;
 }
+
 
 .sidebar {
     width: 204px;
     height: 100vh;
     background-color: #173653;
     color: white;
-    padding: 25px 18px;
     position: fixed;
     top: 0;
     left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
+.sidebar h2 {
+    font-size: 21px;
+}
+
+.sidebar p {
+    color: #b8cbd9;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
 
 .sidebar a {
     display: block;
-    color: #e4edf5;
+    color: white;
     text-decoration: none;
-    padding: 14px 12px;
-    margin-bottom: 8px;
-    border-radius: 7px;
+    padding: 12px 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-.sidebar a:hover,
-.sidebar a.active {
-    background-color: #2d5b80;
-}
-
-.sidebar-bottom {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    color: #b7cada;
-    font-size: 12px;
+.sidebar a:hover {
+    background-color: #245b83;
 }
 
 
 .main {
-    margin-left: 240px;
-    padding: 25px 35px;
+    margin-left: 204px;
+    padding: 25px;
 }
 
 
@@ -56,60 +59,69 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
     margin-bottom: 25px;
 }
 
 .topbar h2 {
-    margin: 0 0 8px;
-    font-size: 23px;
+    margin-top: 0;
+    color: #173653;
 }
 
 .topbar p {
-    margin: 0;
-    color: #78889a;
+    margin-bottom: 0;
+    color: #666;
 }
 
+.topbar h4 {
+    margin-bottom: 5px;
+    color: #245b83;
+}
 
 
 .welcome {
-    background-color: #e0edf8;
-    padding: 25px;
-    border-radius: 12px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
     margin-bottom: 25px;
-}
-
-
-
-.small-heading {
-    color: #3978a8;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-size: 12px;
 }
 
 .welcome h1 {
     color: #173653;
-    font-size: 30px;
-    margin: 12px 0;
+}
+
+.welcome p {
+    line-height: 1.7;
 }
 
 .image {
     width: 40%;
-    height: 200px;
-    border-radius: 10px;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.viewButton {
+
+.viewButton,
+.add {
     display: inline-block;
     background-color: #245b83;
     color: white;
     text-decoration: none;
-    padding: 12px 17px;
-    border-radius: 6px;
-    margin-top: 10px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 3px 5px 0;
+    cursor: pointer;
+    font-size: 13px;
 }
 
 .viewButton:hover,
@@ -117,100 +129,213 @@ body {
     background-color: #173653;
 }
 
+button {
+    background-color: #245b83;
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 4px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #173653;
+}
+
+
 .cards {
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-bottom: 25px;
 }
 
 .card1 {
-    width: 33.33%;
-    padding: 20px;
-    margin-right: 20px;
     background-color: white;
-    border-radius: 10px;
-    border-left: 5px solid #438ac5;
-    box-shadow: 0 3px 12px #e2e8f0;
+    padding: 20px;
+    flex:1;
+    min-width: 140px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.card1 p {
+    color: #666;
+    margin-top: 0;
+}
+
+.card1 h2 {
+    color: #173653;
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.card1 small {
+    color: #777;
 }
 
 
-
-.management{
+.management {
     background-color: white;
-    padding: 25px;
+    padding: 22px;
+    border-radius: 8px;
     margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 3px 12px #e2e8f0;
 }
 
 .heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
-
-.add {
-    background-color: #245b83;
-    color: white;
-    padding: 11px 14px;
-    border-radius: 6px;
-    text-decoration: none;
+.heading h2 {
+    color: #173653;
+    margin-top: 0;
 }
 
+.heading p {
+    color: #666;
+    margin-bottom: 0;
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
 
 table {
     width: 100%;
     border-collapse: collapse;
+    min-width: 600px;
 }
 
-
-
 th {
-    background-color: #edf3f8;
-    color: #36516b;
+    background-color: #173653;
+    color: white;
+    text-align: left;
 }
 
 th,
 td {
-    padding: 15px 12px;
-    text-align: left;
-    border-bottom: 1px solid #e7edf3;
+    padding: 13px 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
 }
+
+tr:hover {
+    background-color: #f4f7fb;
+}
+
 
 .status {
     display: inline-block;
-    padding: 6px 10px;
-    border-radius: 20px;
+    padding: 5px 9px;
+    border-radius: 12px;
     font-size: 12px;
-    font-weight: bold;
 }
 
 .active {
-    color: #18794e;
-    background-color: #d9f5e6;
+    background-color: #d8f3df;
+    color: #23733c;
 }
 
 .inactive {
-    color: #a45b14;
-    background-color: #fff0d6;
+    background-color: #f9dddd;
+    color: #a32929;
+}
+
+
+.quickLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.quickCard {
+    flex: 1;
+    min-width: 200px;
+    background-color: #f4f7fb;
+    padding: 20px;
+    
+    
+}
+
+.quickCard h3 {
+    color: #173653;
+}
+
+.quickCard p {
+    color: #666;
+    line-height: 1.6;
 }
 
 
 .about {
     background-color: white;
     padding: 25px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 25px;
+}
+
+.about h2 {
+    color: #173653;
+}
+
+.about p {
+    line-height: 1.7;
 }
 
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    color: #8491a0;
+    text-align: center;
+    background-color: #173653;
+    color: white;
+    padding: 18px;
+    border-radius: 8px;
     font-size: 13px;
-    padding: 10px 0;
+}
+
+
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar p {
+        margin-bottom: 10px;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 12px;
+    }
+
+    .topbar,
+    .heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .welcome {
+        padding: 18px;
+    }
+
+    .welcome h1 {
+        font-size: 25px;
+    }
+
+    .management {
+        padding: 15px;
+    }
+
+    .quickLinks {
+        flex-direction: column;
+    }
 }
 
 

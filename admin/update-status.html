@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Status Updates</title>
+    <link rel="stylesheet" href="../css/update-status.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>Super Hostel</h2>
+        <p>USER PANEL</p>
+
+        <a href="../code/assigned-task.html">Assigned Task Management</a>
+        <a href="../code/update-status.html" class="active">Service Status Updates</a>
+        <a href="../code/complaint.html">Complaint Handling</a>
+        <a href="../code/profile.html">My Profile</a>
+        <a href="../code/login.html">Login</a>
+
+    </div>
+
+
+    <div class="main">
+
+    <div class="heading">
+
+         <div>
+            <h1>Service Status Updates</h1>
+            <p>Update the progress of your assigned hostel services.</p>
+            </div>
+
+        <div class="role">Service Staff</div>
+
+        </div>
+
+
+        <div class="subtitle">
+
+        <div class="sub-text">
+            <h2>Super Hostel Management</h2>
+
+            <p>Manage your daily hostel services easily. Update cleaning progress, laundry collection status and meal availability from your staff dashboard.</p>
+        </div>
+
+        <div class="image">
+            <img src="../images/hostel.png" >
+        </div>
+
+        </div>
+
+
+        <div class="summery">
+
+        <div class="summary-panal">
+
+            <p>Total Services</p>
+            <h2>08</h2>
+
+        </div>
+
+        <div class="summary-panal">
+
+            <p>In Progress</p>
+            <h2>03</h2>
+
+        </div>
+
+        <div class="summary-panal">
+
+            <p>Completed Services</p>
+            <h2>05</h2>
+
+        </div>
+
+        </div>
+
+
+        <div class="section">
+
+        <div>
+            <h2>Service Status Management</h2>
+            <p>View and update your assigned service status.</p>
+        </div>
+
+        </div>
+
+
+        <div class="table">
+
+    <table>
+
+        <tr>
+            <th>Service Name</th>
+            <th>Location</th>
+            <th>Current Status</th>
+            <th>Update Status</th>
+            <th>Action</th>
+         </tr>
+
+        <tr>
+        <td>Room Cleaning</td>
+        <td>Block A, Room 204</td>
+            <td><span class="progress">In Progress</span></td>
+        <td>
+            <select>
+            <option>Pending</option>
+            <option selected>In Progress</option>
+            <option>Completed</option>
+            </select>
+            </td>
+            <td><button class="update-btn">Update</button></td>
+            </tr>
+
+        <tr>
+        <td>Laundry Service</td>
+        <td>Order LD-024</td>
+         <td><span class="pending">Pending</span></td>
+        <td>
+        <select>
+            <option selected>Pending</option>
+            <option>Ready for Collection</option>
+            <option>Completed</option>
+        </select>
+        </td>
+        <td><button class="update-btn">Update</button></td>
+        </tr>
+
+         <tr>
+             <td>Meal Availability</td>
+            <td>Main Kitchen</td>
+            <td><span class="completed">Available</span></td>
+        <td>
+            <select>
+                <option selected>Available</option>
+                <option>Not Available</option>
+                <option>Preparing</option>
+            </select>
+             </td>
+            <td><button class="update-btn">Update</button></td>
+            </tr>
+
+        </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

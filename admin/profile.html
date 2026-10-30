@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <h2>Super Hostel</h2>
+        <p>USER PANEL</p>
+
+        <a href="../code/assigned-task.html">Assigned Task Management</a>
+        <a href="../code/update-status.html">Service Status Updates</a>
+        <a href="../code/complaint.html">Complaint Handling</a>
+        <a href="../code/profile.html" class="active">My Profile</a>
+        <a href="../code/login.html" class="active">login</a>
+
+    </div>
+
+
+    <div class="main">
+
+        <h1>My Profile</h1>
+        <p>View and manage your personal account information.</p>
+
+
+        <div class="subtitle">
+
+            <div class="sub-text">
+                <h2>Super Hostel Management</h2>
+                <p>Your profile helps us provide better and
+                <br>more personalized hostel services.</p>
+            </div>
+
+            <div class="image">
+                <img src="../images/hostel.png" alt="Hostel Building">
+            </div>
+
+        </div>
+
+
+        <div class="profile-section">
+
+            <div class="profile">
+
+                <div class="avatar">
+                    <h2>R</h2>
+                </div>
+
+                <h2 class="user-name">Rahim Ahmed</h2>
+                <p class="role">Service Staff</p>
+
+                <hr>
+
+                <h3>Profile Information</h3>
+
+                <label>User ID:</label>
+                <input type="text" value="SH-1005" readonly>
+                <br><br>
+
+                <label>Full Name:</label>
+                <input type="text" value="Rahim Ahmed" readonly>
+                <br><br>
+
+                <label>Email:</label>
+                <input type="email" value="rahim@gmail.com" readonly>
+                <br><br>
+
+                <label>Phone:</label>
+                <input type="text" value="01XXXXXXXXX" readonly>
+                <br><br>
+
+                <label>Gender:</label>
+                <input type="text" value="Male" readonly>
+                <br><br>
+
+                <label>Date of Birth:</label>
+                <input type="text" value="01-01-2000" readonly>
+                <br><br>
+
+                <label>Address:</label>
+                <input type="text" value="Dhaka, Bangladesh" readonly>
+                <br><br>
+
+                <label>Role:</label>
+                <input type="text" value="Service Staff" readonly>
+
+            </div>
+
+
+            <div class="editprofile">
+
+                <h2>Edit Profile Information</h2>
+                <p>Update your personal details. Changes will be saved to your account.</p>
+
+                <form action="#" method="post">
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname"
+                           value="Rahim Ahmed">
+
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                           value="rahim@gmail.com">
+
+                    <br><br>
+
+                    <label>Gender:</label>
+
+                    <input type="radio" id="male" name="gender" value="Male" checked>
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+
+                    <br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" value="2000-01-01">
+
+                    <br><br>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address">Dhaka, Bangladesh</textarea>
+
+                    <br><br>
+
+                    <label for="role">Role:</label>
+
+                    <select id="role" name="role">
+                        <option value="admin">Admin</option>
+                        <option value="staff" selected>Service Staff</option>
+                        <option value="administrator">Administrator</option>
+                        <option value="accountant">Accountant</option>
+                    </select>
+
+                    <br><br>
+
+                    <input type="submit" value="Save Changes">
+                    <input type="reset" value="Reset">
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf3fa;
+    background-image: url("../images/hostel.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.registration-card {
+    width: 700px;
+    max-width: 100%;
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.brand-panel {
+    width: 40%;
+    background-color: #19395f;
+    color: white;
+    padding: 35px 25px;
+}
+
+.brand-panel h1 {
+    font-size: 26px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+.brand-panel h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.desc {
+    font-size: 14px;
+    color: #dce7f3;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.features {
+    margin-top: 5px;
+}
+
+.feature-item,
+.features a {
+    display: block;
+    background-color: #294d73;
+    color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.features a:hover {
+    background-color: #315f8c;
+}
+
+.form-panel {
+    width: 60%;
+    padding: 30px;
+}
+
+.form-panel h2 {
+    color: #19395f;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    color: #333333;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d5deea;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #315f8c;
+    outline: none;
+}
+
+.gender-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.gender-group input[type="radio"] {
+    accent-color: #19395f;
+}
+
+.gender-group label {
+    display: inline;
+    margin: 0 5px 0 0;
+}
+
+.terms-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.terms-group input[type="checkbox"] {
+    accent-color: #19395f;
+}
+
+.terms-group label {
+    display: inline;
+    font-size: 13px;
+    margin: 0;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    background-color: #19395f;
+    color: white;
+}
+
+form input[type="submit"]:hover {
+    background-color: #315f8c;
+}
+
+form input[type="reset"] {
+    background-color: #e8edf3;
+    color: #333333;
+}
+
+form input[type="reset"]:hover {
+    background-color: #d5deea;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    .registration-card {
+        flex-direction: column;
+    }
+
+    .brand-panel,
+    .form-panel {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .brand-panel h1 {
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+
+    .brand-panel h2 {
+        font-size: 18px;
+    }
+}

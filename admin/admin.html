@@ -1,6 +1,6 @@
-
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +9,24 @@
 </head>
 <body>
 
-    
-<nav class="sidebar">
-    <h2>Super Hostel</h2>
-    <p>ADMIN PANEL</p>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2>Super Hostel</h2>
+        <p>ADMIN PANEL</p>
 
-    <a href="admin.html">Dashboard</a>
-    <a href="#Users">Users</a>
-    <a href="#staff">Staff Members</a>
-    <a href="service.html">Service Management</a>
-    <a href="complaints.html">Complaints and Reports</a>
-    <a href="#about">About Hostel</a>
-</nav>
+        <a href="admin.html">Dashboard</a>
+        <a href="#users">Student Accounts</a>
+        <a href="#staff">Staff Members</a>
+        <a href="service.html">Service Management</a>
+        <a href="complaints.html">Complaints and Reports</a>
+        <a href="#about">About Hostel</a>
+        <a href="index.html">Visit Homepage</a>
+    </nav>
 
-
+    <!-- Main Content -->
     <div class="main">
 
+        <!-- Topbar -->
         <div class="topbar">
             <div>
                 <h2>Administrator Dashboard</h2>
@@ -32,32 +34,40 @@
             </div>
 
             <div>
-                <h4>Administrator</h4>
+                <h4>Hostel Administrator</h4>
+                <small>Administrator Panel</small>
             </div>
-
         </div>
-
         <section class="welcome" id="dashboard">
             <div>
-                <h1>Super Hostel Management</h1>
-                <p>Manage users and staff information easily
-                    from your administrator dashboard.</p>
+                <h1>Welcome, Administrator!</h1>
+
+                <p>
+                    Manage student accounts, staff information and
+                    hostel services easily from your personalized
+                    administrator dashboard.
+                </p>
+
                 <a href="#users" class="viewButton">
-                    View Users Accounts
+                    Manage Students
                 </a>
+
                 <a href="#staff" class="viewButton">
-                    View Staff Accounts
+                    Manage Staff
                 </a>
             </div>
 
-            <img src="../images/hostel.jpg" alt="Hostel" class="image">
+            <img src="../images/hostel.jpg"
+                 alt="Super Hostel Building"
+                 class="image">
         </section>
 
         <section class="cards">
+
             <div class="card1">
                 <p>Total Users</p>
                 <h2>120</h2>
-                <small>Registered users</small>
+                <small>Registered hostel users</small>
             </div>
 
             <div class="card1">
@@ -68,94 +78,108 @@
 
             <div class="card1">
                 <p>Active Accounts</p>
-                <h2>345</h2>
-                <small>Currently active</small>
+                <h2>125</h2>
+                <small>Currently active accounts</small>
             </div>
+
         </section>
 
         <section class="management" id="users">
+
             <div class="heading">
                 <div>
-                    <h2>User Account Management</h2>
-                    <p>View registered users information.</p>
+                    <h2>Student Account Management</h2>
+                    <p>View and manage registered user information.</p>
                 </div>
-                <a href="#users" class="add">Add Student</a>
+
+                <a href="registration.html" class="add">
+                    Add Student
+                </a>
             </div>
 
-            <div>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>User ID</th>
+                        <th>User Name</th>
+                        <th>Room</th>
+                        <th>User Type</th>
+                        <th>Account Status</th>
+                        <th>Actions</th>
+                    </tr>
 
-<table>
-    <tr>
-        <th>User ID</th>
-        <th>User Name</th>
-        <th>Room</th>
-        <th>User Type</th>
-        <th>Account Status</th>
-        <th>Actions</th>
-    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Rafa Jahan</td>
+                        <td>201</td>
+                        <td>Student</td>
+                        <td>
+                            <span class="status active">Active</span>
+                        </td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Deactivate</button>
+                        </td>
+                    </tr>
 
-    <tr>
-        <td>1</td>
-        <td>Rafa Jahan</td>
-        <td>201</td>
-        <td>Student</td>
-        <td><span class="status active">Active</span></td>
-        <td>
-            <button>Edit</button>
-            <button>Deactivate</button>
-        </td>
-    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Oindrila Chakrabarty</td>
+                        <td>202</td>
+                        <td>Job Holder</td>
+                        <td>
+                            <span class="status active">Active</span>
+                        </td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Deactivate</button>
+                        </td>
+                    </tr>
 
-    <tr>
-        <td>2</td>
-        <td>Oindrila Chakrabarty</td>
-        <td>202</td>
-        <td>Job Holder</td>
-        <td><span class="status active">Active</span></td>
-        <td>
-            <button>Edit</button>
-            <button>Deactivate</button>
-        </td>
-    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nusrat Jahan</td>
+                        <td>205</td>
+                        <td>Student</td>
+                        <td>
+                            <span class="status inactive">Inactive</span>
+                        </td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Activate</button>
+                        </td>
+                    </tr>
 
-    <tr>
-        <td>3</td>
-        <td>Nusrat Jahan</td>
-        <td>205</td>
-        <td>Student</td>
-        <td><span class="status inactive">Inactive</span></td>
-        <td>
-            <button>Edit</button>
-            <button>Deactivate</button>
-        </td>
-    </tr>
-
-    <tr>
-        <td>4</td>
-        <td>Sanjida Akter</td>
-        <td>209</td>
-        <td>Other</td>
-        <td><span class="status inactive">Inactive</span></td>
-        <td>
-            <button>Edit</button>
-            <button>Deactivate</button>
-        </td>
-    </tr>
-</table>
-
+                    <tr>
+                        <td>4</td>
+                        <td>Sanjida Akter</td>
+                        <td>209</td>
+                        <td>Other</td>
+                        <td>
+                            <span class="status inactive">Inactive</span>
+                        </td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Activate</button>
+                        </td>
+                    </tr>
+                </table>
             </div>
+
         </section>
 
         <section class="management" id="staff">
+
             <div class="heading">
                 <div>
                     <h2>Staff Account Management</h2>
                     <p>View staff members and their assigned roles.</p>
                 </div>
+
                 <a href="#staff" class="add">Add Staff</a>
             </div>
 
-            <div>
+            <div class="table-container">
                 <table>
                     <tr>
                         <th>Staff ID</th>
@@ -169,10 +193,12 @@
                         <td>1</td>
                         <td>Abdul Karim</td>
                         <td>Cleaner</td>
-                        <td><span class="status active">Active</span></td>
                         <td>
-                            <button>Edit</button>
-                            <button>Deactivate</button>
+                            <span class="status active">Active</span>
+                        </td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Deactivate</button>
                         </td>
                     </tr>
 
@@ -180,10 +206,12 @@
                         <td>2</td>
                         <td>Hasina Begum</td>
                         <td>Laundry Worker</td>
-                        <td><span class="status active">Active</span></td>
                         <td>
-                            <button>Edit</button>
-                            <button>Deactivate</button>
+                            <span class="status active">Active</span>
+                        </td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Deactivate</button>
                         </td>
                     </tr>
 
@@ -191,28 +219,68 @@
                         <td>3</td>
                         <td>Faysal Ahmed</td>
                         <td>Kitchen Staff</td>
-                        <td><span class="status active">Active</span></td>
                         <td>
-                            <button>Edit</button>
-                            <button>Deactivate</button>
+                            <span class="status active">Active</span>
+                        </td>
+                        <td>
+                            <button type="button">Edit</button>
+                            <button type="button">Deactivate</button>
                         </td>
                     </tr>
                 </table>
             </div>
+
         </section>
+
+        <section class="management">
+
+            <div class="heading">
+                <div>
+                    <h2>Hostel Administration</h2>
+                    <p>Quick access to other administrative responsibilities.</p>
+                </div>
+            </div>
+
+            <div class="quickLinks">
+
+                <div class="quickCard">
+                    <h3>Service Management</h3>
+
+                    <p>
+                        Manage hostel services such as room cleaning,
+                        food and laundry.
+                    </p>
+
+                    <a href="service.html" class="viewButton">
+                        Manage Services
+                    </a>
+                </div>
+
+                <div class="quickCard">
+                    <h3>Complaints and Reports</h3>
+
+                    <p>
+                        Review complaints and monitor hostel
+                        service issues.
+                    </p>
+
+                    <a href="complaints.html" class="viewButton">
+                        View Complaints
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
 
         <section class="about" id="about">
             <h2>About Super Hostel</h2>
-            <p>A simple management system designed to organize
-                student accounts, staff information and hostel services.</p>
-        </section>
 
-        <footer>
-            <p>© 2026 Super Hostel Management System</p>
-            <p>Hostel Administrator Panel</p>
-        </footer>
-
-    </div>
-
-</body>
-</html>
+            <p>
+                The Super Hostel Management System is designed
+                to organize student accounts, staff information,
+                hostel services and complaints in one place.
+                It helps the hostel administrator manage daily
+                operations more efficiently.
+            </p
