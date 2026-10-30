@@ -1,0 +1,195 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+}
+
+.navbar {
+    background-color: #173b57;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navlinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navlinks a:hover {
+    color: #b8e3ff;
+}
+
+.navlinks .login {
+    background-color: #27ae60;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+.navlinks .register {
+    background-color: #27ae60;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 60px;
+    background-color: white;
+}
+
+
+.welcomeText h1 {
+    color: #173b57;
+    font-size: 38px;
+}
+
+.welcomeText p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.welcome img {
+    width: 45%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #173b57;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.button:hover {
+    background-color: #285c7e;
+}
+
+.button.login {
+    background-color: #27ae60;
+}
+
+.services,
+.roles,
+.why {
+    padding: 45px 6%;
+    text-align: center;
+    
+}
+
+.services h2,
+.roles h2,
+.why h2 {
+    color: #173b57;
+    font-size: 28px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.serviceCards,
+.roleCards,
+.whyCards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+   
+}
+
+.card {
+    background-color: white;
+    width: 220px;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ede9e9;
+   
+}
+
+.card h3 {
+    color: #173b57;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.roles {
+    background-color: #eaf1f7;
+}
+
+.role {
+    background-color: white;
+    width: 220px;
+    padding: 22px;
+    border-radius: 8px;
+}
+
+.role h3 {
+    color: #173b57;
+}
+
+.role p {
+    line-height: 1.6;
+}
+
+.whyCard {
+    background-color: white;
+    width: 220px;
+    padding: 18px;
+    border-radius: 8px;
+  
+}
+
+.whyCard h3 {
+    color: #173b57;
+}
+
+.whyCard p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #173b57;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 22px 18px;
+    }
+}
