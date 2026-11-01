@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food and Meal Information</title>
+    <link rel="stylesheet" href="../css/meals.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>Super Hostel</h2>
+        <p>USER PANEL</p>
+
+        <a href="booking.html">Dashboard</a>
+        <a href="booking.html#booking">Book a Service</a>
+        <a href="#menu">Weekly Meal Menu</a>
+        <a href="#selection">Meal Selection</a>
+        <a href="../admin/user-complaints.html">Complaints</a>
+    </nav>
+
+    <div class="main">
+
+        <div class="topbar">
+            <div>
+                <h2>Food and Meal Information</h2>
+                <p>View weekly menus and submit meal requests.</p>
+            </div>
+
+            <div class="user">
+                <h4>Hostel User</h4>
+            </div>
+        </div>
+
+        <section class="welcome" id="dashboard">
+            <div>
+                <h1>Hostel Food and Meals</h1>
+                <p>Check the weekly meal menu and submit your
+                    meal selections or special meal requests.</p>
+
+                <a href="#menu" class="viewButton">
+                    View Weekly Menu
+                </a>
+
+                <a href="#selection" class="viewButton">
+                    Select Meals
+                </a>
+            </div>
+
+            <img
+                src="../images/hostel2.jpg"
+                alt="Hostel dining area"
+                class="image">
+        </section>
+
+        <section class="cards">
+            <div class="card1">
+                <p>Daily Meals</p>
+                <h2>3</h2>
+                <small>Breakfast, lunch and dinner</small>
+            </div>
+
+            <div class="card1">
+                <p>Weekly Menu</p>
+                <h2>7 Days</h2>
+                <small>Available meal schedule</small>
+            </div>
+
+            <div class="card1">
+                <p>Meal Selection</p>
+                <h2>Available</h2>
+                <small>Submit your meal request</small>
+            </div>
+        </section>
+
+        <section class="management" id="menu">
+            <div class="heading">
+                <div>
+                    <h2>Weekly Meal Menu</h2>
+                    <p>View the planned meals for each day.</p>
+                </div>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Day</th>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                        <th>Dinner</th>
+                    </tr>
+
+                    <tr>
+                        <td>Sunday</td>
+                        <td>Bread and Egg</td>
+                        <td>Rice,Dal and Chicken</td>
+                        <td>Rice,Fish and Vegetables</td>
+                    </tr>
+
+                    <tr>
+                        <td>Monday</td>
+                        <td>Paratha and Egg</td>
+                        <td>Rice,Vorta and Fish</td>
+                        <td>Rice,Chicken and Dal</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Bread and Banana</td>
+                        <td>Rice,Vegetables and Mutton</td>
+                        <td>Rice,Dal and Egg Curry</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Paratha and Vegetables</td>
+                        <td>Rice,Vorta and Fish</td>
+                        <td>Rice,Vegetables and Egg Curry</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Bread and Egg</td>
+                        <td>Rice,Vegetables and Fish</td>
+                        <td>Rice,Chicken and Vorta</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>Khichuri</td>
+                        <td>Chicken Biriyani</td>
+                        <td>Rice,Vegetables and Fish</td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturday</td>
+                        <td>Paratha and Egg</td>
+                        <td>Rice,Dal and Mutton</td>
+                        <td>Khichuri</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="management" id="selection">
+            <div class="heading">
+                <div>
+                    <h2>Meal Selection and Requests</h2>
+                    <p>Submit your meal selection or special request.</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label>User Name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label>Room Number</label>
+                    <input type="text" placeholder="Enter room number">
+                </div>
+
+                <div class="form-group">
+                    <label>Meal Date</label>
+                    <input type="date">
+                </div>
+
+                <div class="form-group">
+                    <label>Meal Type</label>
+                    <select>
+                        <option>Select a meal</option>
+                        <option>Breakfast</option>
+                        <option>Lunch</option>
+                        <option>Dinner</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Meal Selection</label>
+                    <select>
+                        <option>Select your meal preference</option>
+                        <option>Regular Meal</option>
+                        <option>Vegetarian Meal</option>
+                        <option>Special Meal Request</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Additional Request</label>
+                    <textarea rows="4" placeholder="Write your meal-related request"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Submit Meal Request
+                </button>
+            </form>
+        </section>
+
+        <section class="management" id="requests">
+            <div class="heading">
+                <div>
+                    <h2>My Meal Requests</h2>
+                    <p>View your submitted meal requests.</p>
+                </div>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Meal Date</th>
+                        <th>Meal Type</th>
+                        <th>Selection</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>29 October 2026</td>
+                        <td>Lunch</td>
+                        <td>Regular Meal</td>
+                        <td><span class="status completed">Confirmed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>30 October 2026</td>
+                        <td>Dinner</td>
+                        <td>Vegetarian Meal</td>
+                        <td><span class="status pending">Pending</span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About Hostel Meals</h2>
+            <p>Students can view the weekly meal menu and submit
+                meal selections or meal-related requests.</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Super Hostel Management System</p>
+            <p>Hostel User Panel</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

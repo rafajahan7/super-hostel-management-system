@@ -21,7 +21,7 @@ body {
     left: 0;
     padding: 20px;
     box-sizing: border-box;
-    overflow-y: auto;
+    
 }
 
 .sidebar h2 {
@@ -105,7 +105,6 @@ body {
     width: 40%;
     max-width: 350px;
     height: 220px;
-    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -146,7 +145,6 @@ button:hover {
 
 .cards {
     display: flex;
-    flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 25px;
 }
@@ -201,11 +199,6 @@ button:hover {
     margin-bottom: 0;
 }
 
-
-.table-container {
-    width: 100%;
-    overflow-x: auto;
-}
 
 table {
     width: 100%;

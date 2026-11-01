@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints and Request Tracking</title>
+    <link rel="stylesheet" href="../css/user-complaints.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>Super Hostel</h2>
+        <p>USER PANEL</p>
+
+        <a href="booking.html">Dashboard</a>
+        <a href="booking.html#booking">Book a Service</a>
+        <a href="meals.html">Food and Meals</a>
+        <a href="#complaint">Submit Complaint</a>
+        <a href="#tracking">Track Requests</a>
+    </nav>
+
+    <div class="main">
+
+        <div class="topbar">
+            <div>
+                <h2>Complaints and Request Tracking</h2>
+                <p>Report hostel problems and track your requests.</p>
+            </div>
+
+            <div class="user">
+                <h4>Hostel User</h4>
+            </div>
+        </div>
+
+        <section class="welcome" id="dashboard">
+            <div>
+                <h1>Complaints and Request Tracking</h1>
+                <p>Report problems related to hostel facilities,
+                    laundry services and food quality.</p>
+
+                <a href="#complaint" class="viewButton">
+                    Submit a Complaint
+                </a>
+
+                <a href="#tracking" class="viewButton">
+                    Track My Requests
+                </a>
+            </div>
+
+            <img
+                src="../images/hostel2.jpg"
+                alt="hostel"
+                class="image">
+        </section>
+
+        <section class="cards">
+            <div class="card1">
+                <p>Total Complaints</p>
+                <h2>4</h2>
+                <small>My submitted complaints</small>
+            </div>
+
+            <div class="card1">
+                <p>Pending Complaints</p>
+                <h2>2</h2>
+                <small>Waiting for a solution</small>
+            </div>
+
+            <div class="card1">
+                <p>Resolved Complaints</p>
+                <h2>2</h2>
+                <small>Completed complaints</small>
+            </div>
+        </section>
+
+        <section class="management" id="complaint">
+            <div class="heading">
+                <div>
+                    <h2>Submit a Complaint</h2>
+                    <p>Provide details about your hostel problem.</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label>User Name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label>Room Number</label>
+                    <input type="text" placeholder="Enter room number">
+                </div>
+
+                <div class="form-group">
+                    <label>Complaint Type</label>
+                    <select>
+                        <option>Select complaint type</option>
+                        <option>Unclean Facilities</option>
+                        <option>Missing Laundry</option>
+                        <option>Food Quality Problem</option>
+                        <option>Water Supply Problem</option>
+                        <option>Other Problem</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Complaint Priority</label>
+                    <select>
+                        <option>Select priority</option>
+                        <option>High</option>
+                        <option>Medium</option>
+                        <option>Low</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Complaint Details</label>
+                    <textarea rows="5" placeholder="Describe your problem"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Submit Complaint
+                </button>
+            </form>
+        </section>
+
+        <section class="management" id="tracking">
+            <div class="heading">
+                <div>
+                    <h2>My Complaints and Requests</h2>
+                    <p>Check the current status of your submitted complaints.</p>
+                </div>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Complaint Type</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Unclean Facilities</td>
+                        <td>Room cleaning required</td>
+                        <td>27 October 2026</td>
+                        <td>High</td>
+                        <td><span class="status pending">Pending</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Missing Laundry</td>
+                        <td>One laundry item is missing</td>
+                        <td>28 October 2026</td>
+                        <td>Medium</td>
+                        <td><span class="status progress">In Progress</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Food Quality</td>
+                        <td>Meal quality problem</td>
+                        <td>28 October 2026</td>
+                        <td>High</td>
+                        <td><span class="status resolved">Resolved</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Water Supply</td>
+                        <td>Water supply issue</td>
+                        <td>29 October 2026</td>
+                        <td>Medium</td>
+                        <td><span class="status resolved">Resolved</span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About Complaints and Requests</h2>
+            <p>Students can report hostel problems and check whether
+                their complaints are pending, in progress or resolved.</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Super Hostel Management System</p>
+            <p>Hostel User Panel</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

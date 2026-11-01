@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Service Booking</title>
+    <link rel="stylesheet" href="../css/booking.css">
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>Super Hostel</h2>
+        <p>USER PANEL</p>
+
+        <a href="#dashboard">Dashboard</a>
+        <a href="#booking">Book a Service</a>
+        <a href="#requests">My Requests</a>
+        <a href="../admin/meals.html">Food and Meals</a>
+        <a href="../admin/user-complaints.html">Complaints</a>
+    </nav>
+
+    <div class="main">
+
+        <div class="topbar">
+            <div>
+                <h2>Hostel Service Booking</h2>
+                <p>Book cleaning and laundry services easily.</p>
+            </div>
+
+            <div class="user">
+                <h4>Hostel User</h4>
+            </div>
+        </div>
+
+        <section class="welcome" id="dashboard">
+            <div>
+                <h1>Hostel Service Booking</h1>
+                <p>Request room cleaning and laundry services
+                    by choosing your preferred service time.</p>
+
+                <a href="#booking" class="viewButton">
+                    Book a Service
+                </a>
+
+                <a href="#requests" class="viewButton">
+                    View My Requests
+                </a>
+            </div>
+
+            <img
+                src="../images/hostel2.jpg"
+                alt="hostel"
+                class="image">
+        </section>
+
+        <section class="cards">
+            <div class="card1">
+                <p>Total Requests</p>
+                <h2>4</h2>
+                <small>My service requests</small>
+            </div>
+
+            <div class="card1">
+                <p>Pending Requests</p>
+                <h2>2</h2>
+                <small>Waiting for service</small>
+            </div>
+
+            <div class="card1">
+                <p>Completed Requests</p>
+                <h2>2</h2>
+                <small>Completed services</small>
+            </div>
+        </section>
+
+        <section class="management" id="booking">
+            <div class="heading">
+                <div>
+                    <h2>Book a Hostel Service</h2>
+                    <p>Fill in the information to request a service.</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label>Student Name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label>Room Number</label>
+                    <input type="text" placeholder="Enter room number">
+                </div>
+
+                <div class="form-group">
+                    <label>Service Type</label>
+                    <select>
+                        <option>Select a service</option>
+                        <option>Room Cleaning</option>
+                        <option>Laundry Service</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Preferred Date</label>
+                    <input type="date">
+                </div>
+
+                <div class="form-group">
+                    <label>Available Service Time</label>
+                    <select>
+                        <option>Select a time</option>
+                        <option>9:00 AM - 11:00 AM</option>
+                        <option>11:00 AM - 1:00 PM</option>
+                        <option>2:00 PM - 4:00 PM</option>
+                        <option>4:00 PM - 6:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Additional Information</label>
+                    <textarea rows="4" placeholder="Write your request here"></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Submit Request
+                </button>
+            </form>
+        </section>
+
+        <section class="management" id="requests">
+            <div class="heading">
+                <div>
+                    <h2>My Service Requests</h2>
+                    <p>View the status of your service requests.</p>
+                </div>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Service Type</th>
+                        <th>Service Date</th>
+                        <th>Service Time</th>
+                        <th>Status</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Room Cleaning</td>
+                        <td>28 October 2026</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                        <td><span class="status pending">Pending</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Laundry Service</td>
+                        <td>29 October 2026</td>
+                        <td>2:00 PM - 4:00 PM</td>
+                        <td><span class="status completed">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Room Cleaning</td>
+                        <td>30 October 2026</td>
+                        <td>11:00 AM - 1:00 PM</td>
+                        <td><span class="status pending">Pending</span></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="about">
+            <h2>About Hostel Services</h2>
+            <p>Students can request room cleaning and laundry services
+                and check the status of their submitted requests.</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Super Hostel Management System</p>
+            <p>Hostel User Panel</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
